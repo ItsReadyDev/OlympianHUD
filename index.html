@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="robots" content="noodp">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- PAGE TITLE -->
+    <title>420 Roleplay Loading by Strain</title>
+
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:300,400" rel="stylesheet">
+
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hero.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hover.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+</head>
+
+<body style="cursor: auto;">
+
+
+    <!-- MAIN -->
+    <div id="main">
+        <!-- LOADING -->
+        <div id="page-loader">
+            <!-- SPINNER CONTAINER -->
+            <div class="spinner-container">
+                <div class="css-spinner"></div>
+            </div>
+            <!-- /SPINNER CONTAINER -->
+        </div>
+        <!-- /LOADING -->
+
+        <!-- HERO -->
+        <section id="hero" class="hero hero-1">
+            <!-- FRONT CONTENT -->
+            <div class="front-content page-enter-animated">
+                <!-- CONTAINER MID -->
+                <div class="container-mid">
+
+                    <img class="logo" src="https://cdn.discordapp.com/attachments/1102610695327076394/1286688970087858238/Untitled-2.png?ex=66eed1fb&is=66ed807b&hm=90f9fba39d8167b4af3fed01325fea1730193656526fcf354075769e6f28ce6e&" alt="logo" style="transition:0.3s;opacity:0;width:30vw;animation: strainAnimation 2.5s 8s forwards, pulse 1.5s infinite;margin-top:6vw;">
+
+                    <!-- CYCLE SLIDER WRAPPER  -->
+                    <div class="cycle-wrapper">
+                        <!-- CYCLE SLIDER -->
+                        <div id="cycle">
+                            <div class="slide">
+                                <h1 style="font-size:2.4vw;font-family:Bebas Nue;font-weight:400">WELCOME TO <span>OLYMPIAN ROLEPLAY</span></h1>
+                                <h1 style="font-size:1.1vw;margin-top:-1vw;font-family:Bebas Nue;font-weight:300">PRESS <u>SPACE</u> TO STOP THE MUSIC</h1>
+                            </div>
+                        </div>
+
+
+                        <audio id="music" volume="0.40" autoplay>
+                            <source src="music.mp3" type="audio/mpeg">
+                        </audio>
+                        <script>
+                            var play = true;
+                            var audio = document.getElementById("music");
+                            audio.volume = 0.40;
+
+                            function onKeyDown(event) {
+                                switch (event.keyCode) {
+                                    case 32: //SpaceBar                    
+                                        if (play) {
+                                            audio.volume = 0.40;
+                                            play = false;
+                                        } else {
+                                            audio.volume = 0.00;
+                                            play = true;
+                                        }
+                                        break;
+                                }
+                                return false;
+                            }
+
+                            window.addEventListener("keydown", onKeyDown, false);
+                        </script>
+                        <!-- /CYCLE SLIDER -->
+                    </div>
+                    <!-- /CYCLE SLIDER WRAPPER -->
+                    <p></p>
+                </div>
+                <!-- /CONTAINER MID -->
+
+
+            </div>
+            <!-- /FRONT CONTENT -->
+
+
+            <!-- BACKGROUND CONTENT -->
+            <div class="background-content page-enter-animated">
+                <!-- LEVEL 1 -->
+                <div class="level-1">
+                    <div class="bg-overlay" style="opacity:.3!important"></div>
+                    <div class="bg-pattern"></div>
+                    <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
+                </div>
+                <!-- /LEVEL 1 -->
+
+
+                <!-- LEVEL 2 -->
+                <div class="level-2">
+                    <div class="bg-image layer" data-depth="0.04"></div>
+                    <div class="bg-video layer" data-depth="0.04">
+                        <!-- <img src="./assets/images/sparks.gif" style="width:100%;height:100%;mix-blend-mode:lighten;filter:hue-rotate(90deg) blur(10px);" /> -->
+						<video style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;height:100%;mix-blend-mode:lighten" autoplay muted>
+							<source style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;height:100%;mix-blend-mode:lighten;image-rendering:pixelated" src="./assets/images/olympian.mp4" type="video/mp4">
+						</video>
+                    </div>
+
+                    <div class="bg-color layer" data-depth="0.04"></div>
+                </div>
+                <!-- /LEVEL 2 -->
+            </div>
+            <!-- /BACKGROUND CONTENT -->
+        </section>
+        <!-- /HERO -->
+
+    </div>
+    <!-- MAIN -->
+
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript" src="assets/js/plugins/plugins.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/hero.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+
+</body>
+
+
+
+</html>
